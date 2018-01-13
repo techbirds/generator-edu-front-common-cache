@@ -1,0 +1,5 @@
+{
+    "directory": "./lib/",
+    "registry": "http://59.111.98.233:5678/",
+    "timeout": 300000
+}

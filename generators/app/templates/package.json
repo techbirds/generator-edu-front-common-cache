@@ -1,0 +1,35 @@
+{
+    "name": "cache-<%= module_name %>",
+    "version": "0.0.1",
+    "description": "cache <%= module_name %> project",
+    "directories": {
+        "test": "test"
+    },
+    "scripts": {
+        "lint": "eslint src/**/*.js",
+        "css": "sass --watch --scss --no-cache --unix-newlines src:src -t compressed",
+        "jsdoc": "jsdoc -c .jsdoc.json",
+        "cache": "nei build -sk 905652e2305a83c0b4b102b58dff37ef -module <%= module_name %>",
+        "coverage-report": "./node_modules/.bin/istanbul report --root test/coverage --dir test/coverage lcov",
+        "coverage-cmd-report": "./node_modules/.bin/istanbul report --root test/coverage --dir test/coverage text-summary",
+        "test": "gulp coverage && mocha-phantomjs test/coverage.html --hooks test/hook.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "ssh://git@g.hz.netease.com:22222/edu-frontend/component-<%= component_name %>.git"
+    },
+    "keywords": [
+        "edu",
+        "cache",
+        "<%= module_name %>"
+    ],
+    "author": "<%= project_author %> <<%= project_author %>@corp.netease.com>",
+    "license": "MIT",
+    "devDependencies": {
+        "gulp": "^3.9.1",
+        "replacestream": "^4.0.2",
+        "ink-docstrap": "^1.2.1",
+        "gulp-istanbul": "^1.1.1",
+        "istanbul": "^0.4.5"
+    }
+}

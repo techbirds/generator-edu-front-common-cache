@@ -1,0 +1,33 @@
+{
+    "name": "cache-<%= module_name %>",
+    "version": "0.0.1",
+    "authors": [
+        "<%= project_author %> <<%= project_author %>@corp.netease.com>"
+    ],
+    "description": "cache <%= module_name %> project",
+    "moduleType": [
+        "globals"
+    ],
+    "keywords": [
+        "edu",
+        "cache",
+        "<%= module_name %>"
+    ],
+    "license": "MIT",
+    "homepage": "",
+    "ignore": [
+        "arch",
+        "docs",
+        "test",
+        "tutorials"
+    ],
+    "dependencies": {
+        "nej": "0.4.5",
+        "cache-base": "master"
+    },
+    "devDependencies": {
+        "mocha": "^3.0.2",
+        "chai": "^3.5.0",
+        "cache-config": "master"
+    }
+}
