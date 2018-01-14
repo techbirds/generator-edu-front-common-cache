@@ -3,7 +3,7 @@
     "version": "0.0.1",
     "description": "cache <%= module_name %> project",
     "directories": {
-        "test": "test"
+        "__test__": "test"
     },
     "scripts": {
         "lint": "eslint src/**/*.js",

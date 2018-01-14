@@ -11,7 +11,7 @@ module.exports = class extends Generator {
     this.log(
       yosay(
         'Welcome to the stellar ' +
-        chalk.red('edu-front-common-component') +
+        chalk.red('edu-front-common-cache') +
         ' generator!'
       )
     );
@@ -19,19 +19,19 @@ module.exports = class extends Generator {
     var prompts = [{
         type: 'input',
         name: 'moduleName',
-        message: 'Please input module name (module):',
+        message: '请输入模块名称 (module):',
         default: 'module'
       },
       {
         type: 'input',
         name: 'componentName',
-        message: 'Please input cache name (cache):',
+        message: '请输入缓存名称 (cache):',
         default: 'cache'
       },
       {
         type: 'input',
         name: 'projectAuthor',
-        message: 'Author (edu):',
+        message: '作者 (edu):',
         default: 'edu'
       }
     ];

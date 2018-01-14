@@ -10,8 +10,5 @@ describe('generator-edu-front-common-cache:app', () => {
   });
 
   it('creates files', () => {
-    assert.file([
-      'dummyfile.txt'
-    ]);
   });
 });
