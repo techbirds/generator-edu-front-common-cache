@@ -1,6 +1,36 @@
 # generator-edu-front-common-cache [![Build Status][travis-image]][travis-url]
 > 
 
+## Structure
+
+```
+.
+├── CHANGELOG.md
+├── CONTRIBUTING.md
+├── LICENSE
+├── README.md
+├── bower.json
+├── gulpfile.js
+├── package.json
+├── src
+│   └── {{args.name}}
+│       ├── cache.js
+│       ├── config.js
+│       └── const.js
+├── test
+│   ├── coverage.html
+│   ├── hook.js
+│   ├── test.html
+│   ├── test.js
+│   ├── util.js
+│   └── {{args.name}}
+│       ├── cases.js
+│       └── test.js
+└── tutorials
+    └── {{args.name}}
+        └── demo.html
+```
+
 ## Installation
 
 First, install [Yeoman](http://yeoman.io) and generator-edu-front-common-cache using [npm](https://www.npmjs.com/) (we assume you have pre-installed [node.js](https://nodejs.org/)).
